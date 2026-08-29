@@ -4,7 +4,7 @@ export default function StatCard(props) {
     return(
         <View style={[styles.card, { backgroundColor: props.bgColor}]}> 
             <Text style={styles.title}>{props.title}</Text>
-            <Text style={styles.value}>{props.title}</Text>
+            <Text style={styles.value}>{props.value}</Text>
         </View>
     );
 }
@@ -12,18 +12,20 @@ export default function StatCard(props) {
 const styles = StyleSheet.create({
     card: {
         padding: 20,
-        borderRadius: 12,
+        paddingLeft: 30,
+        borderRadius: 300,
         marginVertical: 10,
-        width: '100%',
-    },
+        marginRight: 500,
+        width: '100%',          
+    },  
     title: {
         fontSize: 16,
-        color: '#ffffff',
-        fontWeight: '600',
+        color: '#000000',
+        fontWeight: '1200', 
     },
     value: {
         fontSize: 28,
-        color: '#ffffff',
-        fontWeight: '600',
-    },          
+        color: '#000000',
+        fontWeight: '600',  
+    },              
 });
